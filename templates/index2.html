@@ -14,18 +14,55 @@
 
 
 <body>
+   
 
    {% block body %}
    {% include "header.html" %}
    
    <div class="container">
       <div class="row">
+      
+         
 
+         
+         <!--Card-->
 
+         <div class="col-md-3">
+            <div class="card">
+               <div class="card-header">
+                  <p>Desenvolvedor</p>
+               </div>
 
-         <div class="col md-6">
+               <div class="row">
+                        <div class="col-xs-4 col-md-4">
+                              <img src="/static/42752881.jpeg" class="img-responsive" alt="" title="" />
+                        </div>
+               </div>
+                  
+               <div class="card-body">
+                  <h3 class="card-title">Jonathan Cardoso</h3>
+                  <p class="card-text">Eu crios meus prórpios erros para depois corrigilos, 
+                  assim prossigo evoluindo.</p>
+
+                  <div class="btn-group">
+                        <a class="btn btn-secondary btn-sm" role="button" target="_blank" href="https://github.com/Jonathan-geo?tab=repositories">GitHub</a> 
+                        <a class="btn btn-secondary btn-sm" role="button" target="_blank" href="https://gitlab.com/Jonathan-geo?nav_source=navbar">GitLab</a>   
+                        <a class="btn btn-secondary btn-sm" role="button" target="_blank" href="https://twitter.com/jonathan_cdso">Twitter</a>  
+                  </div>
+               </div>
+
+               <div class="card-footer">
+                        <p>Todos os direitos reservados</p>
+               </div>
+            </div>           
+         </div>  
+          
+         
+
+         <!--Lista de Contatos-->
+         <div class="col md-9">
             <div>
-               <h2 class=float-left>Lista de Estudantes</h2>  
+               <h2 class=float-left>Lista de Contatos</h2>  
                <button type="button" class="btn btn-success  pull-right float-right" data-toggle="modal" data-target="#myModal">Adicionar Estudantes</button>
             </div>
 
@@ -73,13 +110,10 @@
       
          <!-- MODAL DE ISERT DATA -->
          {% include "modins.html"  %}
-
-         
-
-
-         
-      </div>
-   </div>
+      
+      
+      </div> <!--Fecha Row Principal-->      
+   </div> <!--Fecha Conteiner Principal-->
 
 
    {% endblock %}
